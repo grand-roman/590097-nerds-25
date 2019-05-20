@@ -34,11 +34,92 @@
         <main class="catalog-container">
             <div class="catalog-columns">
                 <section class="catalog-filters">
+                    <h2 class="visually-hidden">Фильтры каталога</h2>
+                    <form class="filters-form" action="#" method="get">
+                        <fieldset class="filters-price">
+                            <legend class="filters-header">стоимость:</legend>
+                            <div class="filters-range">
+                                <div class="range-line">
+                                    <div class="range-scale" style=""></div>
+                                </div>
+                                <div class="range-button range-button-min"></div>
+                                <div class="range-button range-button-max"></div>
+                            </div>
+                            <div class="filters-fields-labels">
+                                <label class="fields-labels-label">
+                                    от <input id="min-price" name="min-price" class="fields-labels-input" type="text" value="0">
+                                </label>
+                                <label class="fields-labels-label">
+                                    до <input id="max-price" name="max-price" class="fields-labels-input" type="text" value="15000">
+                                </label>
+                            </div>
+                        </fieldset>
 
+                        <fieldset class="filters-grids">
+                            <legend class="filters-header">сетка:</legend>
+                            <ul>
+                                <li class="filters-stroke-wrapping">
+                                    <input class="visually-hidden grids-radio" type="radio" name="adaptive" id="adaptive" checked>
+                                    <label class="grids-item" for="adaptive">Адаптивная</label>
+                                </li>
+                                <li class="filters-stroke-wrapping">
+                                    <input class="visually-hidden grids-radio" type="radio" name="fixed" id="fixed">
+                                    <label class="grids-item" for="fixed">Фиксированная</label>
+                                </li>
+                                <li class="filters-stroke-wrapping">
+                                    <input class="visually-hidden grids-radio" type="radio" name="flexed" id="flexed">
+                                    <label class="grids-item" for="flexed">Резиновая</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+
+                        <fieldset class="filters-features">
+                            <legend class="filters-header">особенности:</legend>
+                            <ul>
+                                <li class="filters-stroke-wrapping">
+                                    <input class="visually-hidden features-checkbox" type="checkbox" id="checkbox-slider" name="checkbox-slider" checked>
+                                    <label class="features-item" for="checkbox-slider">Слайдер</label>
+                                </li>
+                                <li class="filters-stroke-wrapping">
+                                    <input class="visually-hidden features-checkbox" type="checkbox" id="checkbox-block" name="checkbox-block">
+                                    <label class="features-item" for="checkbox-block">Блок преимуществ</label>
+                                </li>
+                                <li class="filters-stroke-wrapping">
+                                    <input class="visually-hidden features-checkbox" type="checkbox" id="checkbox-news" name="checkbox-news" checked>
+                                    <label class="features-item" for="checkbox-news">Новости</label>
+                                </li>
+                                <li class="filters-stroke-wrapping">
+                                    <input class="visually-hidden features-checkbox" type="checkbox" id="checkbox-gallery" name="checkbox-gallery">
+                                    <label class="features-item" for="checkbox-gallery">Галерея</label>
+                                </li>
+                                <li class="filters-stroke-wrapping">
+                                    <input class="visually-hidden features-checkbox" type="checkbox" id="checkbox-basket" name="checkbox-basket">
+                                    <label class="features-item" for="checkbox-basket">Корзина</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+
+                        <button class="button button-grey filters-button" type="submit" name="filters-submit">Показать</button>
+                        
+                    </form>
 
                 </section>
 
                 <section class="catalog">
+
+                    <h2 class="visually-hidden">Каталог</h2>
+                    <div class="sorting-container">
+                        <h3 class="filters-header">сортировать:</h3>
+                        <ul class="sorting-list">
+                            <li class="sorting-item"><a class="sorting-link sorting-link-current" href="#">по цене</a></li>
+                            <li class="sorting-item"><a class="sorting-link" href="#">по типу</a></li>
+                            <li class="sorting-item"><a class="sorting-link" href="#">по названию</a></li>
+                        </ul>
+                        <div class="sorting-order">
+                            <a class="sorting-order-icon-down sorting-order-current" href="#"></a>
+                            <a class="sorting-order-icon-up" href="#"></a>
+                        </div>
+                    </div>
 
                     <ul class="catalog-list">
                         <li class="catalog-item">
@@ -90,16 +171,32 @@
                             </div>
                         </li>
                     </ul>
+
+                    <ul class="pagination-list">
+                        <li class="pagination-item">
+                            <a href="#" class="button button-grey pagination-link pagination-link-current">1</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#" class="button button-grey pagination-link">2</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#" class="button button-grey pagination-link">3</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="#" class="button button-grey pagination-button">следующая</a>
+                        </li>
+                    </ul>
+
                 </section>
             </div>
-
-            <section class="contacts">
-                <h3 class="contacts-block-header">nerds design studio</h3>
-                <p class="contacts-block-message">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                <p class="contacts-block-message">тел. +7 (812) 275-75-75</p>
-                <a href="#" class="button contacts-block-button">напишите нам</a>
-            </section>
         </main>
+
+        <section class="contacts">
+            <h3 class="contacts-block-header">nerds design studio</h3>
+            <p class="contacts-block-message">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p class="contacts-block-message">тел. +7 (812) 275-75-75</p>
+            <a href="#" class="button contacts-block-button">напишите нам</a>
+        </section>
 
         <footer class="page-footer">
             <div class="page-footer-social">
