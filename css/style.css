@@ -38,6 +38,11 @@ body {
     background-color: #efc84a;
 }
 
+.button-grey {
+    background-color: #eeeeee;
+    color: #000000;
+}
+
 .button:hover {
     background-color: #e74246;
 }
@@ -48,6 +53,10 @@ body {
 
 .button-yellow:hover {
     background-color: #eab534;
+}
+
+.button-grey:hover {
+    background-color: #dfdfdf;
 }
 
 .button:active {
@@ -62,6 +71,11 @@ body {
 
 .button-yellow:active {
     background-color: #e5a722;
+}
+
+.button-grey:active {
+    background-color: #d5d5d5;
+    color: #959595;
 }
 
 .page-header {
@@ -329,8 +343,8 @@ body {
     position: absolute;
     margin: auto;
     top: 50%;
-    bottom: 50%;
-    left: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .friendship-slogan-header {
