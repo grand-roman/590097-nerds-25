@@ -215,8 +215,83 @@ body {
 
 .studio {
     box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
     width: 1160px;
     margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 75px;
+
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.about-us-header {
+    margin: 35px 0;
+
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+}
+
+.about-us-message {
+    margin: 25px 0;
+}
+
+.about-us-small-header {
+    margin-bottom: 0px;
+
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.about-us-features-list {
+    padding: 0;
+    list-style: none;
+}
+
+.features-list-item {
+    position: relative;
+    padding: 14px 0;
+    padding-left: 40px;
+}
+
+.features-list-item:before {
+    position: absolute;
+    content: "";
+    vertical-align: middle;
+    width: 30px;
+    height: 2px;
+    background-color: #fb565a;
+    top: 24px;
+    left: 0;
+}
+
+.quality-small-header {
+    margin: 30px 0;
+    padding-left: 25px;
+
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.quality-list {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+.quality-list-header {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
 }
 
 .examples {
@@ -225,10 +300,64 @@ body {
     margin: 0 auto;
 }
 
+.examples-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.examples-item {
+    box-sizing: border-box;
+    position: relative;
+    width: 290px;
+    height: 180px;
+}
+
+.examples-link {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .contacts {
     box-sizing: border-box;
     width: 100%;
     margin: 0;
+    margin-top: 80px;
+    padding: 54px 0;
+    background-image: url(../img/map_default.jpg);
+}
+
+.contacts-block {
+    box-sizing: border-box;
+    width: 320px;
+    margin: 0 380px;
+    padding: 46px 50px;
+    background-color: #fff;
+}
+
+.contacts-block-header {
+    margin: 5px 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contacts-block-message {
+    margin: 20px 0;
+    color: #666666;
+    font-style: 16px;
+    line-height: 18px;
+}
+
+.contacts-block-button {
+    width: 220px;
+    margin-top: 20px;
+    padding: 14px 44px;
 }
 
 .page-footer {
