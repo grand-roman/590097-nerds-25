@@ -1,14 +1,12 @@
 body {
-    box-sizing: border-box;
-    display: block;
-
-    width: 100%;
     margin: 0;
     padding: 0;
+    min-width: 1180px;
 
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+    font: 16px/24px Roboto, Arial, sans-serif;
+    color: #000000;
+
+    background-color: #fff;
 }
 
 .button {
@@ -171,12 +169,11 @@ body {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-    justify-content: space-between;
+            justify-content: space-between;
 
     width: 1160px;
     margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding: 20px 20px 10px;
 }
 
 .main-navigation-logo {
@@ -184,11 +181,11 @@ body {
 }
 
 .main-navigation-logo:hover {
-    opacity: .8;
+    opacity: 0.8;
 }
 
 .main-navigation-logo:active {
-    opacity: .3;
+    opacity: 0.3;
 }
 
 .page-header--main-navigation {
@@ -208,7 +205,7 @@ body {
 
 .main-navigation-link,
 .user-navigation-link {
-    padding: 27px 25px;
+    padding: 0 25px;
 
     color: #000000;
     font-weight: bold;
@@ -226,8 +223,24 @@ body {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.user-navigation-item {
+.page-header--user-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.user-navigation-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
 
     padding-left: 40px;
@@ -238,22 +251,24 @@ body {
     position: absolute;
     width: 20px;
     height: 20px;
-    top: 31px;
-    left: 25px;
+    top: 29px;
+    left: 35px;
 
     background-image: url(../img/cart-icon.svg);
     background-repeat: no-repeat;
 }
 
 .advantages {
-    box-sizing: border-box;
     width: 1160px;
     margin: 0 auto;
-    padding: 80px 0;
+    padding: 80px 20px;
 }
 
 .advantages-list {
-    box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 
     margin: 0;
@@ -287,14 +302,16 @@ body {
 }
 
 .studio {
-    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
     width: 1160px;
     margin: 0 auto;
-    padding-top: 40px;
-    padding-bottom: 75px;
+    padding: 40px 20px 50px;
 
     font-size: 16px;
     line-height: 24px;
@@ -350,8 +367,12 @@ body {
 }
 
 .quality-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
     padding: 0;
 
@@ -413,7 +434,7 @@ body {
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
 
-    opacity: .2;
+    opacity: 0.2;
 }
 
 .examples-link:hover {
@@ -421,22 +442,30 @@ body {
 }
 
 .examples-link:active {
-    opacity: .1;
+    opacity: 0.1;
 }
 
 .contacts {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+        box-sizing: border-box;
     width: 100%;
     margin: 0;
-    margin-top: 80px;
     padding: 54px 0;
+
+    background-color: #eeeeee;
     background-image: url(../img/map_default.jpg);
 }
 
 .contacts-block {
-    box-sizing: border-box;
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contacts-block-card {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 320px;
-    margin: 0 380px;
     padding: 46px 50px;
     background-color: #fff;
 }
@@ -459,13 +488,16 @@ body {
 .contacts-block-button {
     width: 220px;
     margin-top: 20px;
-    padding: 14px 44px;
+    padding: 14px 42px;
 }
 
 .page-footer {
-    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 1160px;
     margin: 0 auto;
+    padding: 70px 20px;
 } 
 
 
@@ -895,7 +927,8 @@ body {
 }
 
 .page-footer {
-    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 1160px;
     margin: 0 auto;
@@ -903,12 +936,16 @@ body {
 }
 
 .social-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 260px;
     margin: 0;
     padding: 0;
-    margin-right: 100px;
+    margin-right: 140px;
 
     list-style: none;
 }
@@ -947,22 +984,24 @@ body {
     margin: auto;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%,-50%);
 }
 
 .friendship-slogan-header {
     margin: 5px 0;
 
-    font-size: 35px;
-    line-height: 35px;
+    font-size: 36px;
+    line-height: 36px;
     font-weight: bold;
 }
 
 .friendship-slogan-message {
     margin: 15px 0;
 
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 22px;
 } 
 
 .visually-hidden {
