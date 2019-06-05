@@ -213,7 +213,7 @@ body {
     padding: 0 25px;
 
     color: #000000;
-    font-weight: bold;
+    font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -291,7 +291,7 @@ body {
 
     font-size: 24px;
     line-height: 30px;
-    font-weight: bold;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -327,7 +327,7 @@ body {
 
     font-size: 45px;
     line-height: 45px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .about-us-message {
@@ -337,7 +337,7 @@ body {
 .about-us-small-header {
     margin-bottom: 0px;
 
-    font-weight: bold;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -367,7 +367,7 @@ body {
     margin: 30px 0;
     padding-left: 25px;
 
-    font-weight: bold;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -388,7 +388,7 @@ body {
     margin: 0;
     margin-bottom: 20px;
 
-    font-weight: bold;
+    font-weight: 500;
     font-size: 45px;
     line-height: 45px;
 }
@@ -479,7 +479,7 @@ body {
     margin: 5px 0;
     font-size: 18px;
     line-height: 30px;
-    font-weight: bold;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -547,7 +547,7 @@ body {
 
     font-size: 18px;
     line-height: 18px;
-    font-weight: bold;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -647,6 +647,7 @@ body {
 .filters-stroke-wrapping {
     margin: 0;
     margin-top: 15px;
+    list-style-type: none;
 }
 
 .filters-grids,
@@ -853,14 +854,40 @@ body {
 }
 
 .catalog-item {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     position: relative;
 
     width: 360px;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 35px;
+    height: 576px;
+    padding-top: 40px;
+    margin-bottom: 50px;
+
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 0 1px rgba(0, 1, 1, 0.1);
+            box-shadow: 0 0 0 1px rgba(0, 1, 1, 0.1);
+    border-radius: 3px 3px 0 0;
+    -webkit-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+.catalog-item:before {
+ content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 40px;
+
+    background: rgba(0, 0, 0, 0.12) url(../img/catalog-header.svg) no-repeat;
+    opacity: 0.12;
+    -webkit-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+.catalog-item:hover::before {
+    opacity: 1;
 }
 
 .catalog-hover-block {
@@ -899,7 +926,7 @@ body {
     color: #000000;
     font-size: 18px;
     line-height: 30px;
-    font-weight: bold;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -999,7 +1026,7 @@ body {
 
     font-size: 36px;
     line-height: 36px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .friendship-slogan-message {
@@ -1117,7 +1144,7 @@ body {
     margin-bottom: 45px;
     font-size: 45px;
     line-height: 45px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .modal-write-us-close-button {
@@ -1163,7 +1190,7 @@ body {
 
     font-size: 16px;
     line-height: 18px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .modal-write-us-input {
