@@ -9,7 +9,7 @@ var email = popup.querySelector("[name=email]");
 var isStorageSupport = true;
 var storage = "";
 
-var form = popup.querySelector("form");
+var form = popup.querySelector(".modal-write-us-form");
 
 try {
     storage = localStorage.getItem("name");
@@ -38,13 +38,11 @@ popupClose.addEventListener('click', function(evt) {
 form.addEventListener("submit", function(evt) {
     if (!name.value || !email.value) {
         evt.preventDefault();
-        popup.classList.add("modal-error");
+        popup.classList.toggle("modal-error");
         popup.offsetWidth = popup.offsetWidth;
-        popup.classList.remove("modal-error");
     } else {
       if (isStorageSupport) {
         localStorage.setItem("name", name.value);
       }
     }
 });
-

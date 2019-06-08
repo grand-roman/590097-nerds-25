@@ -62,7 +62,7 @@
 
                         <fieldset class="filters-grids">
                             <legend class="filters-header">сетка:</legend>
-                            <ul>
+                            <ul class="filters-stroke-ul">
                                 <li class="filters-stroke-wrapping">
                                     <input class="visually-hidden grids-radio" type="radio" name="adaptive" id="adaptive" checked>
                                     <label class="grids-item" for="adaptive">Адаптивная</label>
@@ -80,7 +80,7 @@
 
                         <fieldset class="filters-features">
                             <legend class="filters-header">особенности:</legend>
-                            <ul>
+                            <ul class="filters-stroke-ul">
                                 <li class="filters-stroke-wrapping">
                                     <input class="visually-hidden features-checkbox" type="checkbox" id="checkbox-slider" name="checkbox-slider" checked>
                                     <label class="features-item" for="checkbox-slider">Слайдер</label>
@@ -139,7 +139,7 @@
                             <img class="catalog-image" src="img/img-pink.jpg" width="360" height="576" alt="Pink">
                             <div class="catalog-hover-block">
                                 <p class="hover-block-header">pink</p>
-                                <p class="hover-block-message">Продуктовый лендинг приложения для iOS и Android</p>
+                                <p class="hover-block-message">Продуктовый лендинг приложения<br>для iOS и Android</p>
                                 <a href="#" class="button hover-block-button">9 900 руб.</a>
                             </div>
                         </li>
@@ -147,7 +147,7 @@
                             <img class="catalog-image" src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
                             <div class="catalog-hover-block">
                                 <p class="hover-block-header">barbershop</p>
-                                <p class="hover-block-message">Что то написанно пробел</p>
+                                <p class="hover-block-message">Сайт салоны красоты.<br>Для мужчин, да.</p>
                                 <a href="#" class="button hover-block-button">9 900 руб.</a>
                             </div>
                         </li>
@@ -155,7 +155,7 @@
                             <img class="catalog-image" src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
                             <div class="catalog-hover-block">
                                 <p class="hover-block-header">mishka</p>
-                                <p class="hover-block-message">Что то написанно пробел</p>
+                                <p class="hover-block-message">Интернет-магазин<br>вязаных игрушек</p>
                                 <a href="#" class="button hover-block-button">9 900 руб.</a>
                             </div>
                         </li>
@@ -163,7 +163,7 @@
                             <img class="catalog-image" src="img/img-aplus.jpg" width="360" height="576" alt="A-Plus">
                             <div class="catalog-hover-block">
                                 <p class="hover-block-header">a plus</p>
-                                <p class="hover-block-message">Что то написанно пробел</p>
+                                <p class="hover-block-message">Лендинг курсов<br>повышения квалификации</p>
                                 <a href="#" class="button hover-block-button">9 900 руб.</a>
                             </div>
                         </li>
@@ -171,7 +171,7 @@
                             <img class="catalog-image" src="img/img-kvast.jpg" width="360" height="576" alt="Kvast">
                             <div class="catalog-hover-block">
                                 <p class="hover-block-header">кваст</p>
-                                <p class="hover-block-message">Что то написанно пробел</p>
+                                <p class="hover-block-message">Промо-сайт производителя<br>крафтового кваса</p>
                                 <a href="#" class="button hover-block-button">9 900 руб.</a>
                             </div>
                         </li>
@@ -205,6 +205,7 @@
                     <a href="#" class="button contacts-block-button">напишите нам</a>
                 </div>
             </div>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3cd98a829bc9939448ec90fdaea2f1ec10ee8b8f5d3fa51018d064fbe501365b&amp;source=constructor" class="contacts-map"></iframe>
         </section>
 
         <footer class="page-footer">
@@ -244,6 +245,8 @@
                 <input class="button modal-write-us-button" type="submit" name="submit" value="отправить">
             </form>
         </section>
+
+        <script src="js/popup.js"></script>
         
     </body>
 </html>

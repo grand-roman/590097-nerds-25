@@ -453,6 +453,7 @@ body {
 }
 
 .contacts {
+    position: relative;
     -webkit-box-sizing: border-box;
         box-sizing: border-box;
     width: 100%;
@@ -463,15 +464,29 @@ body {
     background-image: url(../img/map_default.jpg);
 }
 
+.contacts-map{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border: none;
+    outline: none;
+
+}
+
 .contacts-block {
+    position: relative;
+    z-index: 2;
     width: 1160px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .contacts-block-card {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    position: relative;
+    box-sizing: border-box;
     width: 320px;
     padding: 46px 50px;
     background-color: #fff;
@@ -650,6 +665,11 @@ body {
     margin: 0;
     margin-top: 15px;
     list-style-type: none;
+}
+
+.filters-stroke-ul {
+    padding: 0; 
+    margin: 0;
 }
 
 .filters-grids,
@@ -873,7 +893,7 @@ body {
 }
 
 .catalog-item:before {
- content: "";
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -896,7 +916,7 @@ body {
     position: absolute;
     width: 360px;
     min-height: 230px;
-    bottom: 6px;
+    bottom: 0;
     text-align: center;
 
     background-color: #eeeeee;
@@ -1109,7 +1129,18 @@ body {
 }
 
 .modal-write-us {
+    box-sizing: border-box;
     display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -480px;
+    margin-top: -297px;
+    width: 960px;
+    padding: 70px 100px;
+    z-index: 3;
+    background-color: #ffffff;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .75);
 }
 
 .modal-write-us-form {
@@ -1117,21 +1148,8 @@ body {
     display: flex;
     flex-wrap: wrap;
 
-    width: 960px;
-    margin: 0;
-    padding: 70px 100px;
-
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
     font-size: 16px;
     line-height: 18px;
-
-    background-color: #ffffff;
-
-    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .75);
 }
 
 .modal-write-us-header-container {
@@ -1185,6 +1203,9 @@ body {
     display: flex;
     flex-direction: column;
     width: 760px;
+    -webkit-resize: none;
+    resize: none;
+
 }
 
 .modal-write-us-input-header {
@@ -1230,7 +1251,7 @@ body {
     border-color: #b4b9bb;
 }
 
-.modal-write-us-input-field:focus,
+.modal-write-us-input-field:focus,ц
 .modal-write-us-input-textfield:focus {
     border-color: #000000;
 }
@@ -1256,13 +1277,13 @@ body {
     20%, 40%, 60%, 80% {transform: translateX(10px);}
 }
 
-.modal-error {
-    animation-name: error;
-    animation-duration: 0.6s;
-}
-
 .modal-is-showed {
     display: block;
     animation-name: show;
     animation-duration: 1s;
+}
+
+.modal-error {
+    animation-name: error;
+    animation-duration: 0.6s;
 }
