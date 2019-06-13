@@ -35,21 +35,31 @@
             </nav>
 
             <section class="page-header-slider">
-                <div class="slide-first slide-current">
-                    <h3 class="slide-header">Долго, дорого,<br>скрупулёзно.</h3>
-                    <p class="slide-message">Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
-                    <a class="button slider-link" href="#">узнать больше</a>
+                <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+                <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+                <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+                <div class="slider-controls">
+                    <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+                    <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+                    <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
                 </div>
-                <div class="slide-second">
-                    <h3 class="slide-header">Любим математику<br>как никто другой</h3>
-                    <p class="slide-message">Никакого креатива, только математические формулы<br>для расчета идеальных пропорций.</p>
-                    <a class="button slider-link" href="#">узнать больше</a>
-                </div>
-                <div class="slide-third">
-                    <h3 class="slide-header">Только ночь,<br>только хардкор</h3>
-                    <p class="slide-message">Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
-                    <a class="button slider-link" href="#">узнать больше</a>
-                </div>
+                <ul class="slider-list">
+                    <li class="slider-item">
+                        <h3>Долго, дорого,<br> скрупулезно.</h3>
+                        <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                        <a class="slider-link button" href="#">Узнать больше</a>
+                    </li>
+                    <li class="slider-item">
+                        <h3>Любим математику как никто другой</h3>
+                        <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                        <a class="slider-link button" href="#">Узнать больше</a>
+                    </li>
+                    <li class="slider-item">
+                        <h3>Только ночь,<br> только хардкор</h3>
+                        <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+                        <a class="slider-link button" href="#">Узнать больше</a>
+                    </li>
+                </ul>
             </section>
         </header>
 
