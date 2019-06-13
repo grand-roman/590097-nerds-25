@@ -37,11 +37,12 @@
         </header>
 
         <main class="catalog-container">
+
             <div class="catalog-columns">
                 <section class="catalog-filters">
                     <h2 class="visually-hidden">Фильтры каталога</h2>
                     <form class="filters-form" action="#" method="get">
-                        <fieldset class="filters-price">
+                        <fieldset>
                             <legend class="filters-header header-st">стоимость:</legend>
                             <div class="filters-range">
                                 <div class="range-line">
@@ -60,46 +61,46 @@
                             </div>
                         </fieldset>
 
-                        <fieldset class="filters-grids">
+                        <fieldset>
                             <legend class="filters-header">сетка:</legend>
                             <ul class="filters-stroke-ul">
-                                <li class="filters-stroke-wrapping">
-                                    <input class="visually-hidden grids-radio" type="radio" name="adaptive" id="adaptive" checked>
-                                    <label class="grids-item" for="adaptive">Адаптивная</label>
+                                <li class="filter-option">
+                                    <input type="radio" name="type-layout" value="adaptive-layout" class="visually-hidden filter-input filter-input-radio" id="adaptive-layout" checked>
+                                    <label for="adaptive-layout">Адаптивная</label>
                                 </li>
-                                <li class="filters-stroke-wrapping">
-                                    <input class="visually-hidden grids-radio" type="radio" name="fixed" id="fixed">
-                                    <label class="grids-item" for="fixed">Фиксированная</label>
+                                <li class="filter-option">
+                                    <input type="radio" name="type-layout" value="fixed-layout" class="visually-hidden filter-input filter-input-radio" id="fixed-layout">
+                                    <label for="fixed-layout">Фиксированная</label>
                                 </li>
-                                <li class="filters-stroke-wrapping">
-                                    <input class="visually-hidden grids-radio" type="radio" name="flexed" id="flexed">
-                                    <label class="grids-item" for="flexed">Резиновая</label>
+                                <li class="filter-option">
+                                    <input type="radio" name="type-layout" value="fluid-layout" class="visually-hidden filter-input filter-input-radio" id="fluid-layout">
+                                    <label for="fluid-layout">Резиновая</label>
                                 </li>
                             </ul>
                         </fieldset>
 
-                        <fieldset class="filters-features">
+                        <fieldset>
                             <legend class="filters-header">особенности:</legend>
                             <ul class="filters-stroke-ul">
-                                <li class="filters-stroke-wrapping">
-                                    <input class="visually-hidden features-checkbox" type="checkbox" id="checkbox-slider" name="checkbox-slider" checked>
-                                    <label class="features-item" for="checkbox-slider">Слайдер</label>
+                                <li class="filter-option">
+                                    <input type="checkbox" name="slider" class="visually-hidden filter-input filter-input-checkbox" id="filter-slider" checked>
+                                    <label for="filter-slider">Слайдер</label>
                                 </li>
-                                <li class="filters-stroke-wrapping">
-                                    <input class="visually-hidden features-checkbox" type="checkbox" id="checkbox-block" name="checkbox-block">
-                                    <label class="features-item" for="checkbox-block">Блок преимуществ</label>
+                                <li class="filter-option">
+                                    <input type="checkbox" name="features-block" class="visually-hidden filter-input filter-input-checkbox" id="filter-features">
+                                    <label for="filter-features">Блок преимуществ</label>
                                 </li>
-                                <li class="filters-stroke-wrapping">
-                                    <input class="visually-hidden features-checkbox" type="checkbox" id="checkbox-news" name="checkbox-news" checked>
-                                    <label class="features-item" for="checkbox-news">Новости</label>
+                                <li class="filter-option">
+                                    <input type="checkbox" name="news" class="visually-hidden filter-input filter-input-checkbox" id="filter-news" checked>
+                                    <label for="filter-news">Новости</label>
                                 </li>
-                                <li class="filters-stroke-wrapping">
-                                    <input class="visually-hidden features-checkbox" type="checkbox" id="checkbox-gallery" name="checkbox-gallery">
-                                    <label class="features-item" for="checkbox-gallery">Галерея</label>
+                                <li class="filter-option">
+                                    <input type="checkbox" name="gallery" class="visually-hidden filter-input filter-input-checkbox" id="filter-gallery">
+                                    <label for="filter-gallery">Галерея</label>
                                 </li>
-                                <li class="filters-stroke-wrapping">
-                                    <input class="visually-hidden features-checkbox" type="checkbox" id="checkbox-basket" name="checkbox-basket">
-                                    <label class="features-item" for="checkbox-basket">Корзина</label>
+                                <li class="filter-option">
+                                    <input type="checkbox" name="cart" class="visually-hidden filter-input filter-input-checkbox" id="filter-cart">
+                                    <label for="filter-cart">Корзина</label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -114,16 +115,16 @@
 
                     <h2 class="visually-hidden">Каталог</h2>
                     <div class="sorting-container">
-                        <h3 class="filters-header">сортировать:</h3>
+                        <p class="sorting-header">сортировать:</p>
                         <ul class="sorting-list">
                             <li class="sorting-item"><a class="sorting-link sorting-link-current" href="#">по цене</a></li>
                             <li class="sorting-item"><a class="sorting-link" href="#">по типу</a></li>
                             <li class="sorting-item"><a class="sorting-link" href="#">по названию</a></li>
                         </ul>
-                        <div class="sorting-order">
-                            <a class="sorting-order-icon-down sorting-order-current" href="#"></a>
-                            <a class="sorting-order-icon-up" href="#"></a>
-                        </div>
+                        <ul class="sort-order-list">
+                            <li class="sort-order-list-to-bottom sort-order-list-current"><a href="#"></a></li>
+                            <li class="sort-order-list-to-up"><a href="#"></a></li>
+                        </ul>
                     </div>
 
                     <ul class="catalog-list">
