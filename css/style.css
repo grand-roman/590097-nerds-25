@@ -231,9 +231,6 @@ body {
   margin-bottom: 38px;
 }
 
-
-
-
 .page-header-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -314,6 +311,11 @@ body {
     left: 0px;
     background-image: url(../img/cart-icon.svg);
     background-repeat: no-repeat;
+}
+
+.site-navigation-current {
+    -webkit-box-shadow: 0 2px 0 0 #fb565a;
+            box-shadow: 0 2px 0 0 #fb565a;
 }
 
 .advantages {

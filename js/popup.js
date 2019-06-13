@@ -29,7 +29,7 @@ link.addEventListener("click", function(evt) {
     }
 });
 
-popupClose.addEventListener('click', function(evt) {
+popupClose.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup.classList.remove("modal-is-showed");
     popup.classList.remove("modal-error");
