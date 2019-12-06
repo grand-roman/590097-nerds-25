@@ -1,3 +1,6 @@
+
+https://grand-roman.github.io/590097-nerds-25/
+
 # Личный проект «Нёрдс»
 
 * Студент: [Roman Andreev](https://up.htmlacademy.ru/htmlcss/25/user/590097).
