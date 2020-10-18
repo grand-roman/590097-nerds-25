@@ -1,5 +1,5 @@
 
-https://grand-roman.github.io/590097-nerds-25/
+https://grand-roman.github.io/Nerds/index.html
 
 # Личный проект «Нёрдс»
 
